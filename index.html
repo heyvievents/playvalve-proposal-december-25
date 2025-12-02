@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heyvi Proposal | Corporate Dinner 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- ESTILOS GLOBALES --- */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .text-beige { color: #C8B29B; }
+        .bg-beige { background-color: #C8B29B; }
+        .border-beige { border-color: #C8B29B; }
+        
+        /* Efecto Papel */
+        .paper-sheet {
+            background-color: #ffffff;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+            border-radius: 2px;
+            position: relative;
+            overflow: hidden;
+        }
+        @media (min-width: 1024px) {
+            .paper-sheet::before {
+                content: "";
+                position: absolute;
+                top: 0; left: 0; right: 0; bottom: 0;
+                background-image: radial-gradient(#C8B29B 0.5px, transparent 0.5px);
+                background-size: 30px 30px;
+                opacity: 0.3;
+                pointer-events: none;
+            }
+        }
+
+        /* Botones */
+        .btn-view {
+            transition: all 0.3s ease;
+        }
+        .btn-view:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(200, 178, 155, 0.4);
+            background-color: #b09b86;
+        }
+        
+        /* Botón PDF */
+        .btn-pdf {
+            transition: all 0.2s ease;
+            border: 1px solid #e5e7eb;
+        }
+        .btn-pdf:hover {
+            border-color: #C8B29B;
+            color: #C8B29B;
+            background-color: #fffaf5;
+        }
+
+        /* Link de Mapa */
+        .link-map {
+            transition: color 0.2s;
+        }
+        .link-map:hover {
+            color: #C8B29B;
+            text-decoration: underline;
+        }
+
+        /* Scroll margin */
+        section {
+            scroll-margin-top: 100px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+
+    <!-- NAV FLOTANTE -->
+    <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50 py-4 px-6 flex justify-between items-center border-b border-gray-100">
+        <div class="font-bold text-gray-800 tracking-widest text-xs">HEYVI EVENTS</div>
+        <a href="#top" class="text-[10px] uppercase tracking-wider text-gray-500 hover:text-[#C8B29B] transition-colors">Back to Top</a>
+    </nav>
+
+    <!-- HEADER HERO -->
+    <header id="top" class="pt-32 pb-20 px-6 text-center bg-[#1a1a1a] text-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#C8B29B] to-transparent opacity-60"></div>
+        <p class="text-xs uppercase tracking-[0.4em] text-[#C8B29B] mb-4 animate-fade-in">Corporate Experience</p>
+        <h1 class="text-4xl md:text-6xl mb-6 tracking-wide">Venue Selection</h1>
+        <p class="text-gray-400 font-light max-w-xl mx-auto text-sm leading-relaxed">
+            This bespoke proposal presents a curated selection of Barcelona's finest dining experiences, specifically researched for your group. 
+            Please review the comparative table below and explore the detailed menus.
+        </p>
+        <div class="mt-8 text-xs text-gray-500 font-mono">Date: Dec 12, 2025 | Pax: 26</div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 -mt-10 relative z-10 pb-20 space-y-24">
+
+        <!-- 1. TABLA RESUMEN -->
+        <div class="paper-sheet p-6 md:p-12">
+            <div class="flex justify-between items-end mb-8 border-b border-gray-200 pb-4">
+                <div>
+                    <h2 class="serif-font text-2xl md:text-3xl text-gray-800">Overview</h2>
+                    <p class="text-[0.6rem] uppercase tracking-[0.3em] text-gray-400 mt-1">Comparison Matrix</p>
+                </div>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse min-w-[900px]">
+                    <thead>
+                        <tr class="bg-[#fdfbf9] text-xs uppercase tracking-widest text-gray-500 border-b border-[#C8B29B]">
+                            <th class="py-4 pl-4 font-bold w-[25%]">Venue & Location</th>
+                            <th class="py-4 px-2 font-bold w-[10%] text-center">Rating</th>
+                            <th class="py-4 px-2 font-bold w-[35%]">Concept</th>
+                            <th class="py-4 px-2 font-bold text-right w-[15%]">Est. Price</th>
+                            <th class="py-4 px-2 text-center w-[15%]">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm text-gray-600">
+                        
+                        <!-- Cinc Sentits -->
+                        <tr class="border-b border-gray-100 bg-green-50/10 hover:bg-green-50/20 transition-colors">
+                            <td class="py-5 pl-4">
+                                <span class="font-bold text-gray-800 block text-base serif-font">Cinc Sentits</span>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Cinc+Sentits+Barcelona" target="_blank" class="text-[10px] text-gray-500 link-map flex items-center gap-1 mt-1" title="View on Google Maps">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    Eixample
+                                </a>
+                            </td>
+                            <td class="py-5 px-2 text-center">
+                                <span class="text-[12px] text-[#C8B29B] font-bold">4.7 ★</span>
+                            </td>
+                            <td class="py-5 px-2 text-xs leading-relaxed">
+                                <strong>2 Michelin Stars.</strong> Exclusive tailored menu by Chef Jordi Artal. Sophisticated & Private.
+                            </td>
+                            <td class="py-5 px-2 text-right font-bold text-gray-800">€ 209 <span class="block text-[9px] font-normal text-gray-400">(Special Offer)</span></td>
+                            <td class="py-5 px-2 text-center">
+                                <a href="#cincsentits" class="btn-view inline-block px-4 py-2 bg-[#C8B29B] text-white text-[10px] font-bold uppercase tracking-wider rounded">View Proposal</a>
+                            </td>
+                        </tr>
+
+                        <!-- Compartir -->
+                        <tr class="border-b border-gray-100 bg-green-50/10 hover:bg-green-50/20 transition-colors">
+                            <td class="py-5 pl-4">
+                                <span class="font-bold text-gray-800 block text-base serif-font">Compartir BCN</span>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Compartir+Barcelona" target="_blank" class="text-[10px] text-gray-500 link-map flex items-center gap-1 mt-1" title="View on Google Maps">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    Eixample
+                                </a>
+                            </td>
+                            <td class="py-5 px-2 text-center">
+                                <span class="text-[12px] text-[#C8B29B] font-bold">4.5 ★</span>
+                            </td>
+                            <td class="py-5 px-2 text-xs leading-relaxed">
+                                <strong>Disfrutar Team.</strong> "Panchino" w/ caviar, Lobster. Premium Wines incl.
+                            </td>
+                            <td class="py-5 px-2 text-right font-bold text-gray-800">€ 193</td>
+                            <td class="py-5 px-2 text-center">
+                                <a href="#compartir" class="btn-view inline-block px-4 py-2 bg-[#C8B29B] text-white text-[10px] font-bold uppercase tracking-wider rounded">View Menu</a>
+                            </td>
+                        </tr>
+
+                        <!-- 1881 per Sagardi -->
+                        <tr class="border-b border-gray-100 bg-green-50/10 hover:bg-green-50/20 transition-colors">
+                            <td class="py-5 pl-4">
+                                <span class="font-bold text-gray-800 block text-base serif-font">1881 per Sagardi</span>
+                                <a href="https://www.google.com/maps/search/?api=1&query=1881+per+Sagardi" target="_blank" class="text-[10px] text-gray-500 link-map flex items-center gap-1 mt-1" title="View on Google Maps">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    Port Vell (Museum)
+                                </a>
+                            </td>
+                            <td class="py-5 px-2 text-center">
+                                <span class="text-[12px] text-[#C8B29B] font-bold">4.2 ★</span>
+                            </td>
+                            <td class="py-5 px-2 text-xs leading-relaxed">
+                                <strong>Rooftop Terrace.</strong> Traditional Basque Grill with stunning port views. Glass dining room.
+                            </td>
+                            <td class="py-5 px-2 text-right font-bold text-gray-800">€ 100 - € 115</td>
+                            <td class="py-5 px-2 text-center">
+                                <a href="#sagardi" class="btn-view inline-block px-4 py-2 bg-[#C8B29B] text-white text-[10px] font-bold uppercase tracking-wider rounded">View Menu</a>
+                            </td>
+                        </tr>
+
+                        <!-- Mesaquince -->
+                        <tr class="border-b border-gray-100 bg-green-50/10 hover:bg-green-50/20 transition-colors">
+                            <td class="py-5 pl-4">
+                                <span class="font-bold text-gray-800 block text-base serif-font">Mesaquince</span>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Mesaquince+The+Brasa+Club" target="_blank" class="text-[10px] text-gray-500 link-map flex items-center gap-1 mt-1" title="View on Google Maps">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    The Brasa Club
+                                </a>
+                            </td>
+                            <td class="py-5 px-2 text-center">
+                                <span class="text-[12px] text-[#C8B29B] font-bold">4.6 ★</span>
+                            </td>
+                            <td class="py-5 px-2 text-xs leading-relaxed">
+                                <strong>Exclusive Atmosphere.</strong> Angus Steaks & Sweetbreads. Family style sharing.
+                            </td>
+                            <td class="py-5 px-2 text-right font-bold text-gray-800">€ 55</td>
+                            <td class="py-5 px-2 text-center">
+                                <a href="#mesaquince" class="btn-view inline-block px-4 py-2 bg-[#C8B29B] text-white text-[10px] font-bold uppercase tracking-wider rounded">View Menu</a>
+                            </td>
+                        </tr>
+
+                        <!-- Mana 75 -->
+                        <tr class="border-b border-gray-100 bg-green-50/10 hover:bg-green-50/20 transition-colors">
+                            <td class="py-5 pl-4">
+                                <span class="font-bold text-gray-800 block text-base serif-font">Mana 75</span>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Mana+75+Barcelona" target="_blank" class="text-[10px] text-gray-500 link-map flex items-center gap-1 mt-1" title="View on Google Maps">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    Barceloneta
+                                </a>
+                            </td>
+                            <td class="py-5 px-2 text-center">
+                                <span class="text-[12px] text-[#C8B29B] font-bold">4.4 ★</span>
+                            </td>
+                            <td class="py-5 px-2 text-xs leading-relaxed">
+                                Open Kitchen. <span class="text-gray-500 italic">* Late seating at 21:30h.</span> Option for Open Bar (+€45).
+                            </td>
+                            <td class="py-5 px-2 text-right font-bold text-gray-800">€ 75</td>
+                            <td class="py-5 px-2 text-center">
+                                <a href="#mana75" class="btn-view inline-block px-4 py-2 bg-[#C8B29B] text-white text-[10px] font-bold uppercase tracking-wider rounded">View Menu</a>
+                            </td>
+                        </tr>
+
+                        <!-- Tejada Mar -->
+                        <tr class="border-b border-gray-100 bg-green-50/10 hover:bg-green-50/20 transition-colors">
+                            <td class="py-5 pl-4">
+                                <span class="font-bold text-gray-800 block text-base serif-font">Tejada Mar</span>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Tejada+Mar+Barcelona" target="_blank" class="text-[10px] text-gray-500 link-map flex items-center gap-1 mt-1" title="View on Google Maps">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    W Hotel Area
+                                </a>
+                            </td>
+                            <td class="py-5 px-2 text-center">
+                                <span class="text-[12px] text-[#C8B29B] font-bold">4.3 ★</span>
+                            </td>
+                            <td class="py-5 px-2 text-xs leading-relaxed">
+                                Sea Views. Two Menu Options (Casual vs Celebration). <strong class="text-gray-600">Upgrade Available:</strong> Open Bar.
+                            </td>
+                            <td class="py-5 px-2 text-right font-bold text-gray-800">€75 - €95</td>
+                            <td class="py-5 px-2 text-center">
+                                <a href="#tejadamar" class="btn-view inline-block px-4 py-2 bg-[#C8B29B] text-white text-[10px] font-bold uppercase tracking-wider rounded">View Menu</a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- ==============================================
+             SECCIONES DE MENÚ DETALLADO
+             ============================================== -->
+
+        <!-- SECTION: CINC SENTITS -->
+        <section id="cincsentits" class="paper-sheet p-6 md:p-16">
+            <div class="border border-[#e5dcd3] p-8 md:p-12">
+                <div class="text-center mb-10">
+                    <p class="text-[0.6rem] uppercase tracking-[0.4em] text-gray-400 mb-2">Exclusive Venue Proposal</p>
+                    <h2 class="serif-font text-4xl text-gray-800 uppercase">CINC SENTITS</h2>
+                    <h3 class="serif-font text-xl text-beige italic">2 Michelin Stars</h3>
+                    <div class="w-16 h-0.5 bg-[#C8B29B] mx-auto mt-6 opacity-60"></div>
+                </div>
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <p class="text-sm text-gray-600 font-light leading-relaxed italic">
+                        "A journey through the tastes of Catalonia. Chef Jordi Artal offers a unique interpretation of traditional Catalan cuisine, focusing on small producers and storytelling through every dish."
+                    </p>
+                </div>
+                <div class="bg-[#fcfbf9] border border-gray-100 p-8 md:p-10 rounded-sm mb-8 text-center">
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-gray-800 mb-6">Tailored Tasting Experience</h4>
+                    <div class="space-y-6 text-sm text-gray-700 font-medium">
+                        <div>
+                            <p class="text-[#C8B29B] text-xs uppercase mb-1">Welcome</p>
+                            <p>Chef's Appetizers & Snacks</p>
+                        </div>
+                        <div>
+                            <p class="text-[#C8B29B] text-xs uppercase mb-1">Starters</p>
+                            <p>Seasonal creations featuring local ingredients</p>
+                        </div>
+                        <div>
+                            <p class="text-[#C8B29B] text-xs uppercase mb-1">Main Course</p>
+                            <p>Choice of Fresh Market Fish or Premium Meat</p>
+                        </div>
+                        <div>
+                            <p class="text-[#C8B29B] text-xs uppercase mb-1">Finale</p>
+                            <p>Pre-Dessert Refreshment & Signature Dessert</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-gray-200">
+                        <p class="text-xs text-gray-500 italic">* Menu is customized based on group preferences and seasonal availability.</p>
+                    </div>
+                </div>
+                <div class="mt-8 bg-[#f9f7f5] p-6 border border-[#efe9e4] text-center">
+                    <div class="mb-4">
+                        <h4 class="text-[10px] font-bold uppercase text-gray-500 mb-2">Standard Experience</h4>
+                        <p class="text-xs text-gray-500">Regular Tasting Menus normally range from <span class="font-medium text-gray-700">€299 to €499</span>.</p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-200">
+                        <h4 class="text-xs font-bold uppercase text-[#C8B29B] mb-2">Exclusive Group Proposal</h4>
+                        <span class="text-4xl serif-font font-bold text-gray-800">€ 209</span>
+                        <span class="text-xs text-gray-400 uppercase ml-1">/ person (All Inclusive)</span>
+                        <p class="text-[10px] text-gray-600 mt-2 font-medium">Includes Reduced Tasting Menu + Curated Wine Selection.</p>
+                        <p class="text-[9px] text-gray-400 mt-1 italic">(Reduced menu specially negotiated for this group)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: COMPARTIR -->
+        <section id="compartir" class="paper-sheet p-6 md:p-16">
+            <div class="border border-[#e5dcd3] p-8 md:p-12 relative">
+                <div class="text-center mb-10 relative z-10">
+                    <p class="text-[0.6rem] uppercase tracking-[0.4em] text-gray-400 mb-2">Detailed Menu Proposal</p>
+                    <h2 class="serif-font text-4xl text-gray-800 uppercase">Compartir</h2>
+                    <h3 class="serif-font text-xl text-beige italic">Barcelona</h3>
+                    <div class="w-16 h-0.5 bg-[#C8B29B] mx-auto mt-6 opacity-60"></div>
+                    <div class="mt-4">
+                        <a href="pdfs/compartir.pdf" target="_blank" class="btn-pdf inline-flex items-center gap-2 px-4 py-2 rounded-full text-[10px] font-bold uppercase tracking-wider text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            View Original Menu (PDF)
+                        </a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-widest text-gray-800 mb-6 border-b pb-2">The Menu</h4>
+                        <ul class="space-y-3 text-xs text-gray-600">
+                            <li><strong>Gazpacho Sorbet Salad</strong><br><span class="text-[10px] text-gray-400">Strawberries, tomato, pickled cucumber</span></li>
+                            <li><strong>Oyster</strong><br><span class="text-[10px] text-gray-400">With Mignonette Pearl</span></li>
+                            <li><strong>Tuna Cannelloni</strong><br><span class="text-[10px] text-gray-400">Mediterranean flavors</span></li>
+                            <li><strong>Brown Crab "Sin Trabajo"</strong><br><span class="text-[10px] text-gray-400">Avocado & trout roe</span></li>
+                            <li><strong>Beef Carpaccio</strong><br><span class="text-[10px] text-gray-400">Foie gras & Idiazábal</span></li>
+                            <li><strong>Razor Clams</strong><br><span class="text-[10px] text-gray-400">Fennel Meunière</span></li>
+                            <li class="pt-2"><strong class="text-[#C8B29B]">The Original "Panchino"</strong><br><span class="text-[10px] text-gray-400">Caviar & Sour Cream filled bun</span></li>
+                            <li><strong>Local Lobster</strong><br><span class="text-[10px] text-gray-400">Bisque sauce</span></li>
+                            <li><strong>Duck Magret</strong><br><span class="text-[10px] text-gray-400">Pumpkin puree & kale</span></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase tracking-widest text-gray-800 mb-6 border-b pb-2">Sweet Finish</h4>
+                            <ul class="space-y-3 text-xs text-gray-600">
+                                <li><strong>Black Sesame Creamy</strong></li>
+                                <li><strong>Hazelnut Coulant</strong></li>
+                                <li><strong>Liquid Dark Chocolate Bonbons</strong></li>
+                            </ul>
+                        </div>
+                        <div class="mt-8 bg-[#f9f7f5] p-6 border border-[#efe9e4]">
+                            <h4 class="text-xs font-bold uppercase tracking-widest text-[#C8B29B] mb-2">Premium Cellar</h4>
+                            <ul class="text-xs text-gray-600 space-y-2">
+                                <li><span class="font-medium text-gray-800">Taleia 2021</span> <span class="text-gray-400 text-[10px]">| Castell d’Encus</span></li>
+                                <li><span class="font-medium text-gray-800">Penafión 2021</span> <span class="text-gray-400 text-[10px]">| Abadía Da Cova</span></li>
+                                <li><span class="font-medium text-gray-800">Imperial Brut 2018</span> <span class="text-gray-400 text-[10px]">| Gramona</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10 pt-6 border-t border-gray-100 text-center">
+                    <span class="text-3xl serif-font font-bold text-gray-800">€ 193</span>
+                    <span class="text-xs text-gray-400 uppercase">/ person (VAT Excl.)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: MANA 75 -->
+        <section id="mana75" class="paper-sheet p-6 md:p-16">
+            <div class="border border-[#e5dcd3] p-8 md:p-12">
+                <div class="text-center mb-10">
+                    <p class="text-[0.6rem] uppercase tracking-[0.4em] text-gray-400 mb-2">Detailed Menu Proposal</p>
+                    <h2 class="serif-font text-4xl text-gray-800 uppercase">MANÁ 75</h2>
+                    <h3 class="serif-font text-xl text-beige italic">Barceloneta</h3>
+                    <div class="w-16 h-0.5 bg-[#C8B29B] mx-auto mt-6 opacity-60"></div>
+                    <p class="text-xs text-gray-500 mt-2 italic flex items-center justify-center gap-1">
+                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-amber-400"></span> 
+                        Please note: Late seating availability at 21:30h
+                    </p>
+                    <div class="mt-4">
+                        <a href="pdfs/mana75.pdf" target="_blank" class="btn-pdf inline-flex items-center gap-2 px-4 py-2 rounded-full text-[10px] font-bold uppercase tracking-wider text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            View Original Menu (PDF)
+                        </a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-widest text-gray-800 mb-4 border-b pb-2">Starters (To Share)</h4>
+                        <ul class="space-y-2 text-xs text-gray-600">
+                            <li>Iberian Bellota Ham & Tomato Bread</li>
+                            <li>Andalusian Style Squids w/ Kimchi Mayo</li>
+                            <li>Chicken Croquettes</li>
+                            <li>Oriental Salmon Tartare</li>
+                            <li>Burrata & Tomato Salad</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-widest text-gray-800 mb-4 border-b pb-2">Main Course (Choice)</h4>
+                        <ul class="space-y-2 text-xs text-gray-600">
+                            <li><strong>Norway Lobster & Scallops Paella</strong></li>
+                            <li>Meat Paella (Sausage & Ribs)</li>
+                            <li>Seasonal Vegetable Paella</li>
+                            <li>Honeyed Smooth Veal</li>
+                            <li>Monkfish Tail "Santurce Style"</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8 bg-[#f9f7f5] p-4 border border-[#efe9e4] flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+                    <div class="w-full md:w-1/2">
+                        <h4 class="text-[10px] font-bold uppercase text-[#C8B29B] mb-1">Included Drinks</h4>
+                        <p class="text-[10px] text-gray-600">Wine (1 bottle/3 pax) + Water & Coffee + 2 Beers/Soft drinks.</p>
+                    </div>
+                    <div class="w-full md:w-1/2 border-t md:border-t-0 md:border-l border-gray-200 pt-2 md:pt-0 md:pl-4">
+                        <h4 class="text-[10px] font-bold uppercase text-gray-500 mb-1">Optional Upgrade</h4>
+                        <p class="text-[10px] text-gray-600"><strong>Standard Open Bar (2h):</strong> + €45 / pax <br><span class="text-gray-400 italic">(Includes Long Drinks: Gin, Vodka, etc.)</span></p>
+                    </div>
+                </div>
+                <div class="mt-8 pt-6 border-t border-gray-100 text-center">
+                    <span class="text-3xl serif-font font-bold text-gray-800">€ 75</span>
+                    <span class="text-xs text-gray-400 uppercase">/ person (VAT Incl.)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: 1881 PER SAGARDI -->
+        <section id="sagardi" class="paper-sheet p-6 md:p-16">
+            <div class="border border-[#e5dcd3] p-8 md:p-12">
+                <div class="text-center mb-10">
+                    <p class="text-[0.6rem] uppercase tracking-[0.4em] text-gray-400 mb-2">Detailed Menu Proposal</p>
+                    <h2 class="serif-font text-4xl text-gray-800 uppercase">1881 PER SAGARDI</h2>
+                    <h3 class="serif-font text-xl text-beige italic">Museu d'Història de Catalunya</h3>
+                    <div class="w-16 h-0.5 bg-[#C8B29B] mx-auto mt-6 opacity-60"></div>
+                    <p class="text-xs text-gray-500 mt-2 font-medium">Glass dining room (Comedor Acristalado) with Port Views.</p>
+                    <div class="mt-4">
+                        <a href="pdfs/sagardi.pdf" target="_blank" class="btn-pdf inline-flex items-center gap-2 px-4 py-2 rounded-full text-[10px] font-bold uppercase tracking-wider text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            View Original Menu (PDF)
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Menu 1 -->
+                    <div class="border border-gray-100 p-6 rounded text-center">
+                        <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest block mb-2">Option A - Meat</span>
+                        <h4 class="serif-font text-xl text-gray-800 mb-4">"Per Sagardi"</h4>
+                        
+                        <div class="text-xs text-gray-600 space-y-2 mb-6">
+                            <p class="font-bold border-b pb-1 mb-2">Appetizers</p>
+                            <p>Gilda & Txistorra de Orio</p>
+                            <p>Idiazabal Cheese & Spinach Salad</p>
+                            
+                            <p class="font-bold border-b pb-1 mb-2 mt-4">To Share</p>
+                            <p>Cured Beef Ham</p>
+                            <p>Iberian Ham Croquettes</p>
+                            <p>Grilled Biscay Black Pudding</p>
+
+                            <p class="font-bold border-b pb-1 mb-2 mt-4 text-[#C8B29B]">Main Course (To Share)</p>
+                            <p class="font-bold text-gray-800">Old Cow Txuleton (Grilled Steak)</p>
+                            <p class="italic text-[10px]">with Tolosa style peppers</p>
+
+                            <p class="font-bold border-b pb-1 mb-2 mt-4">Dessert</p>
+                            <p>Goxua & Artisan Nougat</p>
+                        </div>
+                        <div class="text-xl font-bold text-gray-800">€ 84 <span class="text-[10px] font-normal text-gray-400">/ pp (Food Only)</span></div>
+                    </div>
+
+                    <!-- Menu 2 -->
+                    <div class="border border-gray-100 bg-[#fcfbf9] p-6 rounded text-center">
+                        <span class="text-[10px] font-bold text-[#C8B29B] uppercase tracking-widest block mb-2">Option B - Fish</span>
+                        <h4 class="serif-font text-xl text-gray-800 mb-4">"1881"</h4>
+                        
+                        <div class="text-xs text-gray-600 space-y-2 mb-6">
+                            <p class="font-bold border-b pb-1 mb-2">Appetizers</p>
+                            <p>Gilda</p>
+                            
+                            <p class="font-bold border-b pb-1 mb-2 mt-4">To Share</p>
+                            <p>Escalivada with marinated anchovies</p>
+                            <p>Premium Galician Beef Carpaccio</p>
+                            <p>Mushroom Croquettes</p>
+
+                            <p class="font-bold border-b pb-1 mb-2 mt-4 text-[#C8B29B]">Main Course (To Share)</p>
+                            <p class="font-bold text-gray-800">Grilled Monkfish (Rape a la parrilla)</p>
+                            <p class="italic text-[10px]">with garden salad</p>
+
+                            <p class="font-bold border-b pb-1 mb-2 mt-4">Dessert</p>
+                            <p>Crema Catalana & Artisan Nougat</p>
+                        </div>
+                        <div class="text-xl font-bold text-[#C8B29B]">€ 94 <span class="text-[10px] font-normal text-gray-400">/ pp (Food Only)</span></div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-[#f9f7f5] p-4 border border-[#efe9e4] flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+                    <div class="w-full">
+                        <h4 class="text-[10px] font-bold uppercase text-[#C8B29B] mb-1">Suggested Beverage Package</h4>
+                        <p class="text-[10px] text-gray-600 font-medium">Includes 1/2 Bottle of Wine + Water + Coffee.</p>
+                        <p class="text-[10px] text-gray-500 mt-1">Add-on Price: <strong class="text-gray-800 text-sm">+ €17</strong> / person</p>
+                    </div>
+                    <div class="w-full border-t md:border-t-0 md:border-l border-gray-200 pt-2 md:pt-0 md:pl-4">
+                        <h4 class="text-[10px] font-bold uppercase text-gray-500 mb-1">⚠️ Venue Restrictions</h4>
+                        <p class="text-[9px] text-gray-500 italic">
+                            As this venue is located inside the Museum of History of Catalonia, <br>
+                            <strong>no audiovisuals or additional decoration</strong> are allowed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: MESAQUINCE -->
+        <section id="mesaquince" class="paper-sheet p-6 md:p-16">
+            <div class="border border-[#e5dcd3] p-8 md:p-12">
+                <div class="text-center mb-10">
+                    <p class="text-[0.6rem] uppercase tracking-[0.4em] text-gray-400 mb-2">Detailed Menu Proposal</p>
+                    <h2 class="serif-font text-4xl text-gray-800 uppercase">MESAQUINCE</h2>
+                    <h3 class="serif-font text-xl text-beige italic">The Brasa Club</h3>
+                    <div class="w-16 h-0.5 bg-[#C8B29B] mx-auto mt-6 opacity-60"></div>
+                    <div class="mt-4">
+                        <a href="pdfs/mesaquince.pdf" target="_blank" class="btn-pdf inline-flex items-center gap-2 px-4 py-2 rounded-full text-[10px] font-bold uppercase tracking-wider text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            View Original Menu (PDF)
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center max-w-lg mx-auto">
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-gray-800 mb-4 border-b pb-2">Argentinian Grill Experience</h4>
+                    <div class="mb-6">
+                        <h5 class="text-[10px] font-bold text-[#C8B29B] uppercase mb-2">Appetizers & Starters</h5>
+                        <ul class="space-y-2 text-xs text-gray-600">
+                            <li>Blood Sausage Croquettes</li>
+                            <li>Spinach Fritters w/ Tzatziki</li>
+                            <li>Fainá w/ Stracciatella</li>
+                            <li><strong>Grilled Provoleta Cheese</strong> w/ pesto & honey</li>
+                            <li><strong>Smoked Sweetbreads</strong> w/ chili oil</li>
+                        </ul>
+                    </div>
+                    <div class="mb-6">
+                        <h5 class="text-[10px] font-bold text-[#C8B29B] uppercase mb-2">The Grill (Mains to Share)</h5>
+                        <ul class="space-y-2 text-xs text-gray-600">
+                            <li><strong>Angus Skirt Steak (Entraña)</strong> w/ Chimichurri</li>
+                            <li><strong>Angus Short Ribs (Asado de Tira)</strong></li>
+                            <li class="text-[10px] text-gray-400 italic mt-2">Sides: French Fries & Grilled Potatoes w/ Parmesan</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8 bg-[#f9f7f5] p-4 border border-[#efe9e4] text-center">
+                    <p class="text-[10px] text-gray-600 mb-1"><strong class="text-[#C8B29B]">Drinks Included:</strong> Red/White Wine (1 bot/3 pax) + Water.</p>
+                    <p class="text-[10px] text-gray-400 italic">Note: Desserts are not included in this base menu.</p>
+                </div>
+                <div class="mt-8 pt-6 border-t border-gray-100 text-center">
+                    <span class="text-3xl serif-font font-bold text-gray-800">€ 55</span>
+                    <span class="text-xs text-gray-400 uppercase">/ person (VAT Incl.)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: TEJADA MAR -->
+        <section id="tejadamar" class="paper-sheet p-6 md:p-16">
+            <div class="border border-[#e5dcd3] p-8 md:p-12">
+                <div class="text-center mb-10">
+                    <p class="text-[0.6rem] uppercase tracking-[0.4em] text-gray-400 mb-2">Detailed Menu Proposal</p>
+                    <h2 class="serif-font text-4xl text-gray-800 uppercase">TEJADA MAR</h2>
+                    <h3 class="serif-font text-xl text-beige italic">Barceloneta Beachfront</h3>
+                    <div class="w-16 h-0.5 bg-[#C8B29B] mx-auto mt-6 opacity-60"></div>
+                    <div class="mt-4">
+                        <a href="pdfs/tejadamar.pdf" target="_blank" class="btn-pdf inline-flex items-center gap-2 px-4 py-2 rounded-full text-[10px] font-bold uppercase tracking-wider text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            View Original Menu (PDF)
+                        </a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Option A -->
+                    <div class="border border-gray-100 p-6 rounded text-center">
+                        <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest block mb-2">Option A</span>
+                        <h4 class="serif-font text-xl text-gray-800 mb-4">Mediterranean</h4>
+                        <div class="text-xs text-gray-600 space-y-2 mb-6">
+                            <p class="font-bold border-b pb-1 mb-2">Starters to Share</p>
+                            <p>Tomato Bread w/ Ham</p>
+                            <p>Shrimp Croquette</p>
+                            <p>Tuna Belly Salad</p>
+                            <p>Mussels Marinara</p>
+                            <p class="font-bold border-b pb-1 mb-2 mt-4">Main Course</p>
+                            <p>Squid & Scallop Rice</p>
+                        </div>
+                        <div class="text-xl font-bold text-gray-800">€ 75 <span class="text-[10px] font-normal text-gray-400">/ pp</span></div>
+                    </div>
+                    <!-- Option B -->
+                    <div class="border border-gray-100 bg-[#fcfbf9] p-6 rounded text-center">
+                        <span class="text-[10px] font-bold text-[#C8B29B] uppercase tracking-widest block mb-2">Option B (Premium)</span>
+                        <h4 class="serif-font text-xl text-gray-800 mb-4">Celebration</h4>
+                        <div class="text-xs text-gray-600 space-y-2 mb-6">
+                            <p class="font-bold border-b pb-1 mb-2">Starters</p>
+                            <p>Tuna Tartare w/ coconut</p>
+                            <p>Beef Carpaccio</p>
+                            <p class="font-bold border-b pb-1 mb-2 mt-4">Main Choice</p>
+                            <p>Turbot "Bilbaína"</p>
+                            <p>Iberian Pork "Secreto"</p>
+                        </div>
+                        <div class="text-xl font-bold text-[#C8B29B]">€ 95 <span class="text-[10px] font-normal text-gray-400">/ pp</span></div>
+                    </div>
+                </div>
+                <!-- Add ons -->
+                <div class="mt-8 border border-gray-200 rounded p-4 flex flex-col md:flex-row gap-6 justify-center text-center">
+                    <div class="w-full md:w-1/2">
+                        <h5 class="text-[10px] font-bold text-gray-500 uppercase mb-2">Welcome Drink (30min)</h5>
+                        <p class="text-[10px] text-gray-600">Wine/Cava: <strong>+10€</strong> | Champagne: <strong>+20€</strong></p>
+                    </div>
+                    <div class="hidden md:block w-px bg-gray-200"></div>
+                    <div class="w-full md:w-1/2">
+                        <h5 class="text-[10px] font-bold text-gray-500 uppercase mb-2">Open Bar (Per Hour)</h5>
+                        <p class="text-[10px] text-gray-600">Basic: <strong>+25€</strong> | w/ Mixed Drinks: <strong>+35€</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-[#1a1a1a] text-white py-12 text-center">
+        <p class="text-[10px] uppercase tracking-[0.4em] text-[#C8B29B] mb-2">HEYVI EVENTS</p>
+        <p class="text-[10px] text-gray-500">Barcelona © 2025</p>
+    </footer>
+
+</body>
+</html>
